@@ -237,16 +237,17 @@ p {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     animation: fadeInUp 1s ease 0.2s both;
+    color: #fff;
 }
 
 .hero-buttons {
-    margin-bottom: 3rem;
+    margin-top: 150px;
     animation: fadeInUp 1s ease 0.4s both;
 }
 
@@ -343,7 +344,7 @@ section {
 
 .about-img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -357,7 +358,7 @@ section {
 .video-container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -411,8 +412,20 @@ section {
 /* Why Us Section */
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.logo_img {
+    width: 20%;
+    max-width: 100px;
 }
 
 .benefit-card {
