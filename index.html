@@ -16,6 +16,26 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '716072614724156');
+        fbq('track', 'PageView');
+        fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=716072614724156&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -23,8 +43,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-coffee"></i>
-                <span>Преміум Кава</span>
+                <img src="./photo/logo.png" class="logo_img" alt="">
+                <span>Bean Band</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Головна</a></li>
@@ -80,20 +100,7 @@
                     <p>✅ Власникам, які хочуть забути про проблеми з кавою та баристами</p>
                     <p>✅ Новим закладам, які шукають надійного партнера з кавового напрямку</p>
                     <p>✅ Бізнесам, які хочуть перейти на якіснішу каву без підвищення собівартості</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Задоволених клієнтів</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Років досвіду</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Країн походження кави</span>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="about-media">
                     <div class="media-grid">
@@ -126,15 +133,15 @@
                     <div class="benefit-icon">
                         <i class="fas fa-medal"></i>
                     </div>
-                    <h3>Ми не просто постачаємо каву — ми допомагаємо закладам ставати кращими у кавовому світі та
-                        глибше розуміти продукт, який вони продають.</h3>
+                    <h3>Ми не просто постачаємо каву — ми відкриваємо ваш заклад для нового кавового рівня.</h3>
 
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Навчаємо новий персонал — навіть без вашої присутності</h3>
+                    <h3>Нові люди — не проблема. Ми самостійно навчаємо персонал, щоб вони варили каву так, як треба
+                        саме вам.</h3>
 
                 </div>
                 <div class="benefit-card">
@@ -148,9 +155,9 @@
                     <div class="benefit-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
-                    <h3>Конкурентні ціни. Ми пропонуємо оптові ціни для великих замовлень та гнучкі умови оплати, щоб допомогти вашому
-                        бізнесу процвітати, зберігаючи стандарти якості</h3>
-                  
+                    <h3>Ми не продаємо «всім одне й те саме» — кава та ціна завжди підлаштовані під саме ваш заклад.
+                    </h3>
+
                 </div>
             </div>
         </div>
@@ -186,21 +193,21 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Телефон</strong>
-                            <p>+38 (067) 123-4567</p>
+                            <p>+380(50)5786231</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Електронна пошта</strong>
-                            <p>info@premiumkava.ua</p>
+                            <p>orientalcaffeua@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <strong>Адреса</strong>
-                            <p>вул. Кавова, 123<br>Бізнес-район, Київ 01001</p>
+                            <p>Ужгород, вул. Приладобудівників 3</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -229,33 +236,13 @@
                             <span class="error-message"></span>
                         </div>
                         <div class="form-group">
-                            <label for="email">Електронна адреса *</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message"></span>
-                        </div>
-                        <div class="form-group">
                             <label for="phone">Номер телефону *</label>
                             <input type="tel" id="phone" name="phone" required>
                             <span class="error-message"></span>
                         </div>
                         <div class="form-group">
-                            <label for="company">Назва компанії/бізнесу</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Цікавить послуга</label>
-                            <select id="service" name="service">
-                                <option value="">Оберіть послугу</option>
-                                <option value="coffee-beans">Постачання кавових зерен</option>
-                                <option value="equipment">Продаж обладнання</option>
-                                <option value="both">Зерна та обладнання</option>
-                                <option value="consultation">Консультація</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Повідомлення</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Розкажіть про ваші кавові потреби..."></textarea>
+                            <label for="company">Місце проживання</label>
+                            <input type="text" id="company" name="location">
                         </div>
                         <button type="submit" class="btn btn-primary">Надіслати повідомлення</button>
                     </form>
@@ -275,34 +262,24 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-coffee"></i>
-                        <span>Premium Coffee Co.</span>
+                        <img src="./photo/logo.png" class="logo_img" alt="">
+                        <span>Bean Band</span>
                     </div>
-                    <p>Your trusted partner in coffee excellence, delivering premium beans and equipment to businesses
-                        and homes worldwide.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Посилання</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Coffee Bean Distribution</li>
-                        <li>Equipment Sales & Service</li>
-                        <li>Consultation & Training</li>
-                        <li>Wholesale Programs</li>
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#services">Чому ми</a></li>
+                        <li><a href="#contact">Контакти</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@premiumcoffeeco.com</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0(50)5786231">0 (50) 578 62 31</a></p>
+                    <p><i class="fas fa-envelope"></i><a
+                            href="mailto:orientalcaffeua@gmail.com">orientalcaffeua@gmail.com</a></p>
                     <div class="social-icons">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -312,7 +289,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Premium Coffee Co. All rights reserved.</p>
+                <p>&copy; 2025 Bean Band. All rights reserved.</p>
             </div>
         </div>
     </footer>
